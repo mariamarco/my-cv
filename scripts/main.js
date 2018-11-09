@@ -1,7 +1,6 @@
 if($(window).width() > 800) {
 
   $(document).on('mousemove', function (event) {
-
     $('.container').css('top', $(window).height() - event.pageY)
 
   })
