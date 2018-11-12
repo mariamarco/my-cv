@@ -22,6 +22,7 @@ html {
 
 .container {
   margin: 5vw;
+  padding-right: 10vw; 
 }
 
 
@@ -43,14 +44,15 @@ html {
 
 p {
   font-family: 'Karla', sans-serif;
-  font-size: 8vh;
-  line-height: 9vh;
+  font-size: 7vh;
+  line-height: 8vh;
+  padding-bottom: 3rem;
 }
 
 a {
   font-family: 'VT323', monospace;
-  font-size:  9vh;
-  line-height: 9vh;
+  font-size:  8vh;
+  line-height: 8vh;
   color: #000;
   text-decoration: none;
 }
@@ -87,9 +89,14 @@ a:hover {
 
 @media(max-width: 1024px) {
 
+  .container {
+    padding-right: 0; 
+  }
+
   p {
     font-size: 5.5vh;
     line-height: 7vh;
+    padding-bottom: 2rem;
   }
 
   a {
@@ -100,24 +107,22 @@ a:hover {
 
 @media(max-width: 768px) {
 
-  .container {
-    width: 90%;
-    top: 10%;
-  }
 
   p {
-    font-size: 5vh;
-    line-height: 6vh;
+    font-size: 4.5vh;
+    line-height: 5.5vh;
+    padding-bottom: 1.3rem;
   }
 
   a {
-    font-size: 5vh;
-    line-height: 6vh;
+    font-size: 5.5vh;
+    line-height: 5.5vh;
   }
 
   .hola {
     margin-right: 10%;
   }
+
   .hola:hover {
     height: 40vh;
   }
