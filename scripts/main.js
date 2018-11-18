@@ -1,18 +1,11 @@
-if($(window).width() > 800) {
+$(document).ready(function() {    
 
-  $(document).on('mousemove', function (event) {
-    $('.container').css('top', $(window).height() - event.pageY)
+	$(".info-link").mouseenter(function(){
+		$("body").css("background-color","#e6aefd");
+  });
 
-  })
+  $(".info-link").mouseleave(function(){
+		$("body").css("background-color","white");
+  });
 
-
-  $(document).on("mouseenter", "a", function(){
-    $("body").css("background-color", "#e6aefd");
-    });
-    
-    $(document).on("mouseleave", "a", function(){
-      $("body").css("background-color", "white");
-    });
-
-}
-
+});
